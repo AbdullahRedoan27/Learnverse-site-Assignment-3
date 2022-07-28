@@ -17,3 +17,6 @@ a{
     text-decoration: none;
     color: white;
 }
+.carousel-caption{
+    line-height:1;
+}
