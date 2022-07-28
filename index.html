@@ -242,7 +242,7 @@
 
       <!-- -----Ready to join----- -->
     <section class="container mt-4">
-      <div class="row bg-primary rounded align-items-center">
+      <div class="row bg-primary rounded align-items-center justify-content-around">
         <div class="col-lg-9 text-white p-3 text-center text-lg-start">
           <h3 class="fw-bold mt-3 mb-3">
             Ready to join?
@@ -250,7 +250,31 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, quaerat veniam expedita culpa molestiae nihil vero quos quod nemo aut iste eveniet vel a beatae sapiente praesentium ea provident iusto.</p>
         </div>
         <div class="text-center col-lg-2">
-          <button class="btn btn-light text-primary mb-3">Register Now</button>
+          <button class="btn btn-light text-primary mb-3 btn-lg" data-bs-toggle="modal" data-bs-target="#register-form">Register Now</button>
+
+          <!-- Modal -->
+<div class="modal fade" id="register-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><b>Register</b></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div><b>First Name:</b><input type="text" placeholder="First Name" class="mb-2 rounded"></div>
+        <div><b>Last Name:</b><input type="text" placeholder="Last Name" class="mb-2 rounded"></div>
+        <div><b>Email:</b> <input type="Email" placeholder="Enter your email" required class="rounded"></div>
+        <div><b>Password:</b>  <input type="Password" placeholder="Create a password" required class="rounded mt-2"></div>
+        <div><b>User Name:</b>  <input type="text" placeholder="User Name" required class="rounded mt-2"></div>
+        <div><input type="checkbox"> <b>Remember me</b></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">reset</button>
+        <button type="submit" class="btn btn-primary btn-md" data-bs-dismiss="">submit</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </section>
